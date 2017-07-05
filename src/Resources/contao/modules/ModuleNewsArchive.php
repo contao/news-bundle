@@ -186,14 +186,39 @@ class ModuleNewsArchive extends \ModuleNews
 			}
 		}
 
+		// Determine sorting
+		$t = \NewsModel::getTable();
+		$arrOptions = array();
+		switch ($this->news_list_order)
+		{
+			case 'list_date_asc':
+				$arrOptions['order'] = "$t.date ASC";
+				break;
+
+			case 'list_headline_asc':
+				$arrOptions['order'] = "$t.headline ASC";
+				break;
+
+			case 'list_headline_desc':
+				$arrOptions['order'] = "$t.headline DESC";
+				break;
+
+			case 'list_random':
+				$arrOptions['order'] = "RAND()";
+				break;
+
+			default:
+				$arrOptions['order'] = "$t.date DESC";
+		}
+
 		// Get the news items
 		if (isset($limit))
 		{
-			$objArticles = \NewsModel::findPublishedFromToByPids($intBegin, $intEnd, $this->news_archives, $limit, $offset);
+			$objArticles = \NewsModel::findPublishedFromToByPids($intBegin, $intEnd, $this->news_archives, $limit, $offset, $arrOptions);
 		}
 		else
 		{
-			$objArticles = \NewsModel::findPublishedFromToByPids($intBegin, $intEnd, $this->news_archives);
+			$objArticles = \NewsModel::findPublishedFromToByPids($intBegin, $intEnd, $this->news_archives, 0, 0, $arrOptions);
 		}
 
 		// Add the articles

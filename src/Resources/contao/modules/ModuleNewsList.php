@@ -213,6 +213,31 @@ class ModuleNewsList extends \ModuleNews
 			}
 		}
 
-		return \NewsModel::findPublishedByPids($newsArchives, $blnFeatured, $limit, $offset);
+		// Determine sorting
+		$t = \NewsModel::getTable();
+		$arrOptions = array();
+		switch ($this->news_list_order)
+		{
+			case 'list_date_asc':
+				$arrOptions['order'] = "$t.date ASC";
+				break;
+
+			case 'list_headline_asc':
+				$arrOptions['order'] = "$t.headline ASC";
+				break;
+
+			case 'list_headline_desc':
+				$arrOptions['order'] = "$t.headline DESC";
+				break;
+
+			case 'list_random':
+				$arrOptions['order'] = "RAND()";
+				break;
+
+			default:
+				$arrOptions['order'] = "$t.date DESC";
+		}
+
+		return \NewsModel::findPublishedByPids($newsArchives, $blnFeatured, $limit, $offset, $arrOptions);
 	}
 }

@@ -86,6 +86,27 @@
       <trans-unit id="tl_module.unfeatured">
         <source>Skip featured news items</source>
       </trans-unit>
+      <trans-unit id="tl_module.news_list_order.0">
+        <source>Sort order</source>
+      </trans-unit>
+      <trans-unit id="tl_module.news_list_order.1">
+        <source>Choose the sort order of the news list.</source>
+      </trans-unit>
+      <trans-unit id="tl_module.list_date_desc">
+        <source>Date (descending)</source>
+      </trans-unit>
+      <trans-unit id="tl_module.list_date_asc">
+        <source>Date (ascending)</source>
+      </trans-unit>
+      <trans-unit id="tl_module.list_headline_asc">
+        <source>Headline (ascending)</source>
+      </trans-unit>
+      <trans-unit id="tl_module.list_headline_desc">
+        <source>Headline (descending)</source>
+      </trans-unit>
+      <trans-unit id="tl_module.list_random">
+        <source>Random</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>
