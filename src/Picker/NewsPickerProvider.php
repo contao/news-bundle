@@ -15,6 +15,7 @@ use Contao\CoreBundle\Framework\FrameworkAwareTrait;
 use Contao\CoreBundle\Menu\AbstractMenuProvider;
 use Contao\CoreBundle\Menu\PickerMenuProviderInterface;
 use Contao\CoreBundle\Picker\AbstractPickerProvider;
+use Contao\CoreBundle\Picker\DcaPickerProviderInterface;
 use Contao\CoreBundle\Picker\PickerConfig;
 use Contao\DataContainer;
 use Contao\NewsArchiveModel;
@@ -28,14 +29,14 @@ use Symfony\Component\HttpFoundation\Request;
  *
  * @author Leo Feyer <https://github.com/leofeyer>
  */
-class NewsPickerProvider extends AbstractPickerProvider implements FrameworkAwareInterface
+class NewsPickerProvider extends AbstractPickerProvider implements DcaPickerProviderInterface, FrameworkAwareInterface
 {
     use FrameworkAwareTrait;
 
     /**
      * {@inheritdoc}
      */
-    public function getAlias()
+    public function getName()
     {
         return 'newsPicker';
     }
@@ -88,12 +89,16 @@ class NewsPickerProvider extends AbstractPickerProvider implements FrameworkAwar
     /**
      * {@inheritdoc}
      */
-    public function prepareConfig(PickerConfig $config, DataContainer $dc)
+    public function getDcaTable()
     {
-        if ('tl_news' !== $dc->table) {
-            return null;
-        }
+        return 'tl_news';
+    }
 
+    /**
+     * {@inheritdoc}
+     */
+    public function getDcaAttributes(PickerConfig $config)
+    {
         $result = ['fieldType' => $config->getExtra('fieldType')];
 
         if ('link' === $config->getContext() && $this->supportsValue($config)) {
@@ -106,7 +111,7 @@ class NewsPickerProvider extends AbstractPickerProvider implements FrameworkAwar
     /**
      * {@inheritdoc}
      */
-    public function prepareValue(PickerConfig $config, $value)
+    public function convertDcaValue(PickerConfig $config, $value)
     {
         return '{{news_url::'.$value.'}}';
     }
