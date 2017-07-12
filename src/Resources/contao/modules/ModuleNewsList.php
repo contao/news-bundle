@@ -216,7 +216,7 @@ class ModuleNewsList extends \ModuleNews
 		// Determine sorting
 		$t = \NewsModel::getTable();
 		$arrOptions = array();
-		switch ($this->news_list_order)
+		switch ($this->news_sorting)
 		{
 			case 'list_date_asc':
 				$arrOptions['order'] = "$t.date ASC";

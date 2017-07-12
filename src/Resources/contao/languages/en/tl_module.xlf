@@ -86,10 +86,10 @@
       <trans-unit id="tl_module.unfeatured">
         <source>Skip featured news items</source>
       </trans-unit>
-      <trans-unit id="tl_module.news_list_order.0">
+      <trans-unit id="tl_module.news_sorting.0">
         <source>Sort order</source>
       </trans-unit>
-      <trans-unit id="tl_module.news_list_order.1">
+      <trans-unit id="tl_module.news_sorting.1">
         <source>Choose the sort order of the news list.</source>
       </trans-unit>
       <trans-unit id="tl_module.list_date_desc">
