@@ -131,10 +131,10 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['news_order'] = array
 $GLOBALS['TL_DCA']['tl_module']['fields']['news_sorting'] = array
 (
 	'label'                   => &$GLOBALS['TL_LANG']['tl_module']['news_sorting'],
-	'default'                 => 'list_date_desc',
+	'default'                 => 'sort_date_desc',
 	'exclude'                 => true,
 	'inputType'               => 'select',
-	'options'                 => array('list_date_desc', 'list_date_asc', 'list_headline_asc', 'list_headline_desc', 'list_random'),
+	'options'                 => array('sort_date_desc', 'sort_date_asc', 'sort_headline_asc', 'sort_headline_desc', 'sort_random'),
 	'reference'               => &$GLOBALS['TL_LANG']['tl_module'],
 	'eval'                    => array('tl_class'=>'w50'),
 	'sql'                     => "varchar(32) NOT NULL default ''"

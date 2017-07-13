@@ -218,19 +218,19 @@ class ModuleNewsList extends \ModuleNews
 		$arrOptions = array();
 		switch ($this->news_sorting)
 		{
-			case 'list_date_asc':
+			case 'sort_date_asc':
 				$arrOptions['order'] = "$t.date ASC";
 				break;
 
-			case 'list_headline_asc':
+			case 'sort_headline_asc':
 				$arrOptions['order'] = "$t.headline ASC";
 				break;
 
-			case 'list_headline_desc':
+			case 'sort_headline_desc':
 				$arrOptions['order'] = "$t.headline DESC";
 				break;
 
-			case 'list_random':
+			case 'sort_random':
 				$arrOptions['order'] = "RAND()";
 				break;
 
