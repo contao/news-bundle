@@ -99,13 +99,13 @@ class NewsPickerProvider extends AbstractPickerProvider implements DcaPickerProv
      */
     public function getDcaAttributes(PickerConfig $config)
     {
-        $result = ['fieldType' => $config->getExtra('fieldType')];
+        $attributes = ['fieldType' => 'radio'];
 
-        if ('link' === $config->getContext() && $this->supportsValue($config)) {
-            $result['value'] = str_replace(['{{news_url::', '}}'], '', $config->getValue());
+        if ($this->supportsValue($config)) {
+            $attributes['value'] = str_replace(['{{news_url::', '}}'], '', $config->getValue());
         }
 
-        return $result;
+        return $attributes;
     }
 
     /**
