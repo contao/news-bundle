@@ -9,6 +9,7 @@ services:
         public: false
         arguments:
             - "@knp_menu.factory"
-            - "@security.token_storage"
+        calls:
+            - [setTokenStorage, ["@security.token_storage"]]
         tags:
             - { name: contao.picker_provider, priority: 128 }
