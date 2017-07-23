@@ -12,22 +12,16 @@ namespace Contao\NewsBundle\Picker;
 
 use Contao\CoreBundle\Framework\FrameworkAwareInterface;
 use Contao\CoreBundle\Framework\FrameworkAwareTrait;
-use Contao\CoreBundle\Menu\AbstractMenuProvider;
-use Contao\CoreBundle\Menu\PickerMenuProviderInterface;
 use Contao\CoreBundle\Picker\AbstractPickerProvider;
 use Contao\CoreBundle\Picker\DcaPickerProviderInterface;
 use Contao\CoreBundle\Picker\PickerConfig;
-use Contao\DataContainer;
 use Contao\NewsArchiveModel;
 use Contao\NewsModel;
-use Knp\Menu\FactoryInterface;
-use Knp\Menu\ItemInterface;
-use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Provides the news picker.
  *
- * @author Leo Feyer <https://github.com/leofeyer>
+ * @author Andreas Schempp <https://github.com/aschempp>
  */
 class NewsPickerProvider extends AbstractPickerProvider implements DcaPickerProviderInterface, FrameworkAwareInterface
 {
