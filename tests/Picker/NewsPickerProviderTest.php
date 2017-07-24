@@ -8,7 +8,7 @@
  * @license LGPL-3.0+
  */
 
-namespace Contao\CoreBundle\Tests\Picker;
+namespace Contao\NewsBundle\Tests\Picker;
 
 use Contao\BackendUser;
 use Contao\CoreBundle\Picker\PickerConfig;
