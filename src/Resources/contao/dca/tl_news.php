@@ -628,8 +628,8 @@ class tl_news extends Backend
 			$varValue = StringUtil::generateAlias($dc->activeRecord->headline);
 		}
 
-		$objAlias = $this->Database->prepare("SELECT id FROM tl_news WHERE alias=?")
-								   ->execute($varValue);
+		$objAlias = $this->Database->prepare("SELECT id FROM tl_news WHERE alias=? AND NOT id=?")
+								   ->execute($varValue, $dc->activeRecord->id);
 
 		// Check whether the news alias exists
 		if ($objAlias->numRows > 1 && !$autoAlias)
