@@ -11,7 +11,7 @@
       </trans-unit>
       <trans-unit id="tl_user.newp.0">
         <source>News permissions</source>
-        <target>Archivrechte</target>
+        <target>Nachrichten Archivrechte</target>
       </trans-unit>
       <trans-unit id="tl_user.newp.1">
         <source>Here you can define the news permissions.</source>
