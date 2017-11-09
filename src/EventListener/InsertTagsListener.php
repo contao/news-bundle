@@ -48,13 +48,10 @@ class InsertTagsListener
      * Replaces news insert tags.
      *
      * @param string $tag
-     * @param bool   $useCache
-     * @param mixed  $cacheValue
-     * @param array  $flags
      *
      * @return string|false
      */
-    public function onReplaceInsertTags(string $tag, bool $useCache, $cacheValue, array $flags)
+    public function onReplaceInsertTags(string $tag)
     {
         $elements = explode('::', $tag);
         $key = strtolower($elements[0]);
@@ -64,6 +61,13 @@ class InsertTagsListener
         }
 
         if (\in_array($key, self::$supportedTags, true)) {
+            $flags = [];
+
+            // Get the flags argument provided by hook
+            if (count($args = func_get_args()) > 3 && is_array($args[3])) {
+                $flags = $args[3];
+            }
+
             return $this->replaceNewsInsertTags($key, $elements[1], $flags);
         }
 
