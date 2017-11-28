@@ -43,10 +43,7 @@ class InsertTagsListenerTest extends ContaoTestCase
         $framework = $this->mockContaoFramework($adapters);
         $listener = new InsertTagsListener($framework);
 
-        $this->assertSame(
-            'http://localhost/share/news.xml',
-            $listener->onReplaceInsertTags('news_feed::2')
-        );
+        $this->assertSame('http://localhost/share/news.xml', $listener->onReplaceInsertTags('news_feed::2'));
     }
 
     public function testReplacesTheNewsTags(): void
@@ -57,17 +54,19 @@ class InsertTagsListenerTest extends ContaoTestCase
         ];
 
         $newsModel = $this->mockClassWithProperties(NewsModel::class, $properties);
-
         $news = $this->mockAdapter(['generateNewsUrl']);
+
         $news
             ->method('generateNewsUrl')
-            ->willReturnCallback(function ($model, $addArchive, $absolute) {
-                if ($absolute) {
-                    return 'http://domain.tld/news/foo-is-not-bar.html';
-                }
+            ->willReturnCallback(
+                function (NewsModel $model, bool $addArchive, bool $absolute): string {
+                    if ($absolute) {
+                        return 'http://domain.tld/news/foo-is-not-bar.html';
+                    }
 
-                return 'news/foo-is-not-bar.html';
-            })
+                    return 'news/foo-is-not-bar.html';
+                }
+            )
         ;
 
         $adapters = [
