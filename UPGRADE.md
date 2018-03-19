@@ -1,6 +1,6 @@
 # API changes
 
-## Version 3.* to 4.0
+## Version 3.* to 4.4
 
 ### Template name changes
 
