@@ -537,8 +537,8 @@ class tl_news extends Backend
 				break;
 
 			case 'cut':
-				if (Input::get('mode') == 1)
-				{
+			case 'copy':
+				if (Input::get('act') == 'cut' && Input::get('mode') == 1) {
 					$objArchive = $this->Database->prepare("SELECT pid FROM tl_news WHERE id=?")
 						->limit(1)
 						->execute(Input::get('pid'));
@@ -548,17 +548,16 @@ class tl_news extends Backend
 						throw new Contao\CoreBundle\Exception\AccessDeniedException('Invalid news item ID ' . Input::get('pid') . '.');
 					}
 
-					if (!\in_array($objArchive->pid, $root))
-					{
-						throw new Contao\CoreBundle\Exception\AccessDeniedException('Not enough permissions to ' . Input::get('act') . ' news item ID ' . $id . ' of news archive ID ' . $objArchive->pid . '.');
-					}
-
-					break;
+					$pid = $objArchive->pid;
 				}
-			case 'copy':
-				if (!\in_array(Input::get('pid'), $root))
+				else
 				{
-					throw new Contao\CoreBundle\Exception\AccessDeniedException('Not enough permissions to ' . Input::get('act') . ' news item ID ' . $id . ' to news archive ID ' . Input::get('pid') . '.');
+					$pid = Input::get('pid');
+				}
+
+				if (!\in_array($pid, $root))
+				{
+					throw new Contao\CoreBundle\Exception\AccessDeniedException('Not enough permissions to ' . Input::get('act') . ' news item ID ' . $id . ' to news archive ID ' . $pid . '.');
 				}
 				// NO BREAK STATEMENT HERE
 
