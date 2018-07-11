@@ -538,10 +538,11 @@ class tl_news extends Backend
 
 			case 'cut':
 			case 'copy':
-				if (Input::get('act') == 'cut' && Input::get('mode') == 1) {
+				if (Input::get('act') == 'cut' && Input::get('mode') == 1)
+				{
 					$objArchive = $this->Database->prepare("SELECT pid FROM tl_news WHERE id=?")
-						->limit(1)
-						->execute(Input::get('pid'));
+												 ->limit(1)
+												 ->execute(Input::get('pid'));
 
 					if ($objArchive->numRows < 1)
 					{
