@@ -10,6 +10,7 @@
 
 namespace Contao;
 
+use Contao\CoreBundle\Exception\InternalServerErrorException;
 use Contao\CoreBundle\Exception\PageNotFoundException;
 use Patchwork\Utf8;
 
@@ -58,30 +59,17 @@ class ModuleNewsReader extends ModuleNews
 			\Input::setGet('items', \Input::get('auto_item'));
 		}
 
-		// Do not index or cache the page if no news item has been specified
+		// Return empty module if items is not set (to combine list and reader on same page)
 		if (!\Input::get('items'))
 		{
-			/** @var PageModel $objPage */
-			global $objPage;
-
-			$objPage->noSearch = 1;
-			$objPage->cache = 0;
-
 			return '';
 		}
 
 		$this->news_archives = $this->sortOutProtected(\StringUtil::deserialize($this->news_archives));
 
-		// Do not index or cache the page if there are no archives
 		if (empty($this->news_archives) || !\is_array($this->news_archives))
 		{
-			/** @var PageModel $objPage */
-			global $objPage;
-
-			$objPage->noSearch = 1;
-			$objPage->cache = 0;
-
-			return '';
+			throw new InternalServerErrorException(sprintf('The news reader with id "%s" has no news archives specified.', $this->id));
 		}
 
 		return parent::generate();
