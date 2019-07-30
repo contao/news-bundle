@@ -1,145 +1,145 @@
 <?xml version="1.0" ?><xliff version="1.1">
-  <file datatype="php" original="src/Resources/contao/languages/en/tl_news_archive.php" source-language="en" target-language="pt">
+  <file datatype="php" original="src/Resources/contao/languages/en/tl_news_archive.php" source-language="en" target-language="sk">
     <body>
       <trans-unit id="tl_news_archive.title.0">
         <source>Title</source>
-        <target>Título</target>
+        <target>Nadpis</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.title.1">
         <source>Please enter a news archive title.</source>
-        <target>Favor inserir o título do arquivo de notícias</target>
+        <target>Prosím, vložte názov archívu noviniek.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.jumpTo.0">
         <source>Redirect page</source>
-        <target>Redirecionar página</target>
+        <target>Presmerovanie na stránku</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.jumpTo.1">
         <source>Please choose the news reader page to which visitors will be redirected when clicking a news item.</source>
-        <target>Favor selecionar a página para a qual os visitantes serão redirecionados quando clicarem em um artigo.</target>
+        <target>Prosím vyberte stránku, na ktorú budú návštevníci presmerovaní po kliknutí na názov archívu noviniek.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.allowComments.0">
         <source>Enable comments</source>
-        <target>Ativar comentários</target>
+        <target>Povoliť komentáre</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.allowComments.1">
         <source>Allow visitors to comment news items.</source>
-        <target>Permitir os visitantes a escrever comentários nas notícias.</target>
+        <target>Povoliť návštevníkom komentovať novinky.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.notify.0">
         <source>Notify</source>
-        <target>Notificar</target>
+        <target>Zaslanie oznámenia</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.notify.1">
         <source>Please choose who to notify when comments are added.</source>
-        <target>Por favor escolhe quem vai ser notificado quando os comentários forem adicionados.</target>
+        <target>Zadajte prosím osoby, ktoré obdržia oznámenia keď bude vložený komentár (oddelené čiarkou).</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.sortOrder.0">
         <source>Sort order</source>
-        <target>Ordem de classificação</target>
+        <target>Zoradiť podľa</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.sortOrder.1">
         <source>By default, comments are sorted ascending, starting with the oldest one.</source>
-        <target>Por padrão, os comentários são classificadas ascendente, começando com os mais antigos.</target>
+        <target>Podľa východzieho nastavenia sa na prvom mieste zobrazia najnovšie komentáre.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.perPage.0">
         <source>Comments per page</source>
-        <target>Comentários por página</target>
+        <target>Počet komentárov na stránku</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.perPage.1">
         <source>Number of comments per page. Set to 0 to disable pagination.</source>
-        <target>Número de comentários por página. Defina como 0 para desativar a paginação.</target>
+        <target>Počet komentárov na stránku. Zadaním 0 deaktivujete stránkovanie.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.moderate.0">
         <source>Moderate comments</source>
-        <target>Comentários moderados</target>
+        <target>Moderovanie komentárov</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.moderate.1">
         <source>Approve comments before they are published on the website.</source>
-        <target>Aprove os comentários antes que ele sejam exibidos no site.</target>
+        <target>Schválenie komentárov pred ich zverejnením.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.bbcode.0">
         <source>Allow BBCode</source>
-        <target>Permitir BBCode</target>
+        <target>Povoliť BBCode</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.bbcode.1">
         <source>Allow visitors to format their comments with BBCode.</source>
-        <target>Permitir que visitantes utilizem BBCode para formatar os comentários.</target>
+        <target>Povoliť návštevníkom formátovať ich komentáre pomocou BBCode.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.requireLogin.0">
         <source>Require login to comment</source>
-        <target>Requerem login para comentar</target>
+        <target>Vyžadovať prihlásenie pre pridávanie komentárov</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.requireLogin.1">
         <source>Allow only authenticated users to create comments.</source>
-        <target>Permitir que somente usuários autenticados podem criar comentários.</target>
+        <target>Povolí pridávať komentáre len registrovaným užívateľom.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.disableCaptcha.0">
         <source>Disable the security question</source>
-        <target>Disabilitar pergunta de segurança</target>
+        <target>Vypnúť bezpečnostnú otázku</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.disableCaptcha.1">
         <source>Use this option only if you have limited comments to authenticated users.</source>
-        <target>Use esta opção apenas se você tiver comentários limitada a usuários autenticados.</target>
+        <target>Zvoľte túto možnosť len vtedy, pokiaľ ste povolili komentáre len užšiemu okruhu užívateľov.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.protected.0">
         <source>Protect archive</source>
-        <target>Arquivo protegido</target>
+        <target>Ochrániť archív</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.protected.1">
         <source>Show news items to certain member groups only.</source>
-        <target>Mostrar notícias apenas a certos membros de grupos.</target>
+        <target>Zobraziť novinky iba určitej skupine.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.groups.0">
         <source>Allowed member groups</source>
-        <target>Membros de grupos permitidos</target>
+        <target>Povolené skupiny členov</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.groups.1">
         <source>These groups will be able to see the news items in this archive.</source>
-        <target>Aqui você pode selecionar quais membros de grupos terão permissão para ler as notícias.</target>
+        <target>Tu môžete vybrať, ktorým skupinám bude umožnené prehliadať novinky.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.tstamp.0">
         <source>Revision date</source>
-        <target>Data da última alteração</target>
+        <target>Dátum zmeny</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.tstamp.1">
         <source>Date and time of the latest revision</source>
-        <target>Data e hora da última alteração</target>
+        <target>Dátum a čas poslednej úpravy</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.title_legend">
         <source>Title and redirect page</source>
-        <target>Página de título e redirecionamento</target>
+        <target>Názov a presmerovacia stránka</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.comments_legend">
         <source>Comments</source>
-        <target>Comentários</target>
+        <target>Komentáre</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.protected_legend">
         <source>Access protection</source>
-        <target>Proteção de acesso</target>
+        <target>Chránený prístup</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.feed_legend">
         <source>RSS/Atom feed</source>
-        <target>RSS/Atom</target>
+        <target>RSS/Atom kanál</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.notify_admin">
         <source>System administrator</source>
-        <target>Administrador de sistema</target>
+        <target>Administrátor systému</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.notify_author">
         <source>Author of the news item</source>
-        <target>Autor do ítem de notícias</target>
+        <target>Autor novinky</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.notify_both">
         <source>Author and system administrator</source>
-        <target>Autor e administrador de sistema</target>
+        <target>Autor a administrátor systému</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.feeds.0">
         <source>RSS feeds</source>
-        <target>RSS feeds</target>
+        <target>Kanály RSS</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.feeds.1">
         <source>Manage RSS feeds</source>
-        <target>Administrar RSS feeds</target>
+        <target>Spravovať kanály RSS</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.new.0">
         <source>New</source>
@@ -158,7 +158,7 @@
       </trans-unit>
       <trans-unit id="tl_news_archive.editmeta">
         <source>Edit the news archive settings</source>
-        <target>Editar as configurações do arquivo de noticias</target>
+        <target>Upravte nastavenia archívu správ</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.copy">
         <source>Duplicate news archive ID %s</source>
