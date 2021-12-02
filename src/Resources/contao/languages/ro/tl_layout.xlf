@@ -1,17 +1,17 @@
 <?xml version="1.0" ?><xliff version="1.1">
-  <file datatype="php" original="src/Resources/contao/languages/en/tl_layout.php" source-language="en" target-language="fa">
+  <file datatype="php" original="src/Resources/contao/languages/en/tl_layout.php" source-language="en" target-language="ro">
     <body>
       <trans-unit id="tl_layout.newsfeeds.0">
         <source>News feeds</source>
-        <target>خوراک‌های اخبار</target>
+        <target>Flux RSS de noutăţi</target>
       </trans-unit>
       <trans-unit id="tl_layout.newsfeeds.1">
         <source>Please select the news feeds you want to add to the layout.</source>
-        <target>لطفا خوراک‌های خبر را که می‌خواهید برای اضافه شدن به چیدمان انتخاب کنید.</target>
+        <target>Alegeţi fluxul RSS asociat modulului de noutăţi pe care doriţi să îl includeţi în ansamblul curent.</target>
       </trans-unit>
       <trans-unit id="tl_layout.feed_legend">
         <source>RSS/Atom feeds</source>
-        <target>خوراک‌های آراس‌اس/اتم</target>
+        <target>Fluxuri RSS</target>
       </trans-unit>
     </body>
   </file>
