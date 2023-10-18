@@ -1,173 +1,171 @@
 <?xml version="1.0" ?><xliff version="1.1">
-  <file datatype="php" original="contao/languages/en/tl_news_archive.php" source-language="en" target-language="lv">
+  <file datatype="php" original="contao/languages/en/tl_news_archive.php" source-language="en" target-language="fa">
     <body>
       <trans-unit id="tl_news_archive.title.0">
         <source>Title</source>
-        <target>Virsraksts</target>
+        <target>عنوان</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.title.1">
         <source>Please enter a news archive title.</source>
-        <target>Lūdzu ievadiet jaunumu arhīva virsrakstu.</target>
+        <target>لطفا عنوان بایگانی خبر را وارد نمایید.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.jumpTo.0">
         <source>Redirect page</source>
-        <target>Pārsūtīšanas lapa</target>
+        <target>برگه‌ی تغییر مسیر</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.jumpTo.1">
         <source>Please choose the newsreader page to which visitors will be redirected when clicking a news item.</source>
-        <target>Lūdzu, izvēlieties jaunumu lasītāja lapu, uz kuru apmeklētāji tiks novirzīti, noklikšķinot uz jaunumu vienuma.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.allowComments.0">
         <source>Enable comments</source>
-        <target>Iespējot komentārus</target>
+        <target>فعال کردن دیدگاه‌ها</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.allowComments.1">
         <source>Allow visitors to comment news items.</source>
-        <target>Ļauj apmeklētājiem komentēt jaunumu vienumus.</target>
+        <target>به بازدیدکنندگان اجازه دیدگاه به خبر را می‌دهد.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.notify.0">
         <source>Notify</source>
-        <target>Ziņot</target>
+        <target>آگاهی دادن</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.notify.1">
         <source>Please choose who to notify when comments are added.</source>
-        <target>Lūdzu, izvēlieties kam paziņot par komentāru pievienošanu.</target>
+        <target>لطفا کسی را که وقتی دیدگاه‌ها اضافه شد آگاه شود را انتخاب نمایید.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.sortOrder.0">
         <source>Sort order</source>
-        <target>Kārtošanas kārtība</target>
+        <target>ترتیب مرتب‌سازی</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.sortOrder.1">
         <source>By default, comments are sorted ascending, starting with the oldest one.</source>
-        <target>Pēc noklusējuma komentāri tiek kārtoti dilstoši, sākot ar vecāko.</target>
+        <target>به صورت پیش‌فرض، دیدگاه‌ها به صورت صعودی از قدیمی‌ترین مرتب می شوند.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.perPage.0">
         <source>Comments per page</source>
-        <target>Komentāri lapā</target>
+        <target>دیدگاه‌ها در هر برگه</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.perPage.1">
         <source>Number of comments per page. Set to 0 to disable pagination.</source>
-        <target>Komentāru skaits lapā. Ielikt 0, lai atspējotu lapdali.</target>
+        <target>تعداد دیدگاه‌ها در هر برگه. برای غیرفعال کردن برگه‌بندی عدد 0 را وارد نمایید.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.moderate.0">
         <source>Moderate comments</source>
-        <target>Komentāru cenzūra</target>
+        <target>بررسی دیدگاه‌ها</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.moderate.1">
         <source>Approve comments before they are published on the website.</source>
-        <target>Apstiprināt komentārus pirms tie tiek publicēti mājas lapā.</target>
+        <target>تایید دیدگاه‌ها قبل از انتشار در وب‌سایت.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.bbcode.0">
         <source>Allow BBCode</source>
-        <target>Atļaut BBCode</target>
+        <target>اجازه BBCode</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.bbcode.1">
         <source>Allow visitors to format their comments with BBCode.</source>
-        <target>Atļaut apmeklētājiem lieot BBCode komentāru formatēšanai.</target>
+        <target>اجازه دادن به کاربران برای دیدگاه دادن با BBCode.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.requireLogin.0">
         <source>Require login to comment</source>
-        <target>Prasīt pieslēgties, lai komentētu</target>
+        <target>برای دیدگاه نیاز به ورود است</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.requireLogin.1">
         <source>Allow only authenticated members to create comments.</source>
-        <target>Atļaut tikai autorizētiem biedriem izveidot komentārus.</target>
+        <target>اجازه دادن فقط به اعضاء معتبر به ایحاد دیدگاه‌ها.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.disableCaptcha.0">
         <source>Disable spam protection</source>
-        <target>Atspējot aizsardzību pret surogātpastu </target>
+        <target>غیرفعال کردن حفاظت اسپم</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.disableCaptcha.1">
         <source>Use this option only if you have limited comments to authenticated users.</source>
-        <target>Izmantojiet šo opciju tikai tad, ja jūs esat atļavis komentārus tikai reģistrētiem lietotājiem.</target>
+        <target>از این گزینه فقط برای محدود کردن دیدگاه‌ها به کاربران تایید شده استفاده نمایید.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.protected.0">
         <source>Protect archive</source>
-        <target>Aizsargāt arhīvu</target>
+        <target>حفاظت از بایگانی</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.protected.1">
         <source>Show news items to certain member groups only.</source>
-        <target>Rādīt jaunumu vienumus tikai noteiktām biedru grupām.</target>
+        <target>با فعال کردن این گزینه می‌توانید به گروه خاصی اجازه مشاهده اخبار را بدهید.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.groups.0">
         <source>Allowed member groups</source>
-        <target>Atļautās biedru grupas</target>
+        <target>گروه‌های اعضاء مجاز</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.groups.1">
         <source>These groups will be able to see the news items in this archive.</source>
-        <target>Šīm biedru grupām tiks atļauts apskatīt šī arhīva ziņas.</target>
+        <target>این گروه‌ها قادر به دیدن آیتم‌ها خبری در این بایگانی خواهند بود.</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.tstamp.0">
         <source>Revision date</source>
-        <target>Pārskatījuma datums</target>
+        <target>تاریخ بازنگری</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.tstamp.1">
         <source>Date and time of the latest revision</source>
-        <target>Pēdējā pārskatījuma datums un laiks</target>
+        <target>تاریخ و ساعت آخرین بازنگری</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.title_legend">
         <source>Title and redirect page</source>
-        <target>Nosaukums un virzienmaiņas lapa</target>
+        <target>عنوان و برگه تغییر مسیر</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.comments_legend">
         <source>Comments</source>
-        <target>Komentāri</target>
+        <target>دیدگاه‌ها</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.protected_legend">
         <source>Access protection</source>
-        <target>Piekļuves aizsardzība</target>
+        <target>حفاظت دسترسی</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.notify_admin">
         <source>System administrator</source>
-        <target>Sistēmas administrators</target>
+        <target>مدیر سامانه</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.notify_author">
         <source>Author of the news item</source>
-        <target>Jaunumu vienuma autors</target>
+        <target>نویسنده آیتم خبر</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.notify_both">
         <source>Author and system administrator</source>
-        <target>Autors un sistēmas administrators</target>
+        <target>نویسنده و مدیر سامانه</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.feeds.0">
         <source>News feeds</source>
-        <target>Jaunumu plūsmas</target>
+        <target>فید‌های اخبار</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.feeds.1">
         <source>Manage news feeds</source>
-        <target>Pārvaldīt jaunumu plūsmas</target>
+        <target>مدیریت فید اخبار</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.new.0">
         <source>New</source>
-        <target>Jauns</target>
+        <target>جدید</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.new.1">
         <source>Create a new news archive</source>
-        <target>Izveidot jaunu jaunumu arhīvu</target>
+        <target>ایجاد یک بایگانی خبری جدید</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.show">
         <source>Show the details of news archive ID %s</source>
-        <target>Rādīt jaunumu arhīva ID %s detaļas</target>
+        <target>نمایش جزئیات بایگانی خبری شناسه %s</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.edit">
         <source>Edit news archive ID %s</source>
-        <target>Rediģēt jaunumu arhīvu ID %s</target>
+        <target>ویرایش بایگانی خبری شناسه %s</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.children">
         <source>Edit the news items of news archive ID %s</source>
-        <target>Rediģēt jaunumu arhīva ID %s jaunumu vienumus</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.copy">
         <source>Duplicate news archive ID %s</source>
-        <target>Dublēt jaunumu arhīvu ID %s </target>
+        <target>تکثیر بایگانی خبری شناسه %s</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.delete">
         <source>Delete news archive ID %s</source>
-        <target>Dzēst jaunumu arhīvu ID %s</target>
+        <target>حذف بایگانی خبری شناسه %s</target>
       </trans-unit>
       <trans-unit id="tl_news_archive.comments">
         <source>Show comments of news archive ID %s</source>
-        <target>Rādīt jaunumu arhīva ID %s komentārus</target>
+        <target>نمایش دیدگاه‌های بایگانی خبری شناسه %s</target>
       </trans-unit>
     </body>
   </file>
