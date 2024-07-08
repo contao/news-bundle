@@ -1,25 +1,25 @@
 <?xml version="1.0" ?><xliff version="1.1">
-  <file datatype="php" original="contao/languages/en/tl_user.php" source-language="en" target-language="fa">
+  <file datatype="php" original="contao/languages/en/tl_user.php" source-language="en" target-language="sr">
     <body>
       <trans-unit id="tl_user.news.0">
         <source>Allowed archives</source>
-        <target>بایگانی‌های مجاز</target>
+        <target>Дозвољене категорије</target>
       </trans-unit>
       <trans-unit id="tl_user.news.1">
         <source>Here you can grant access to one or more news archives.</source>
-        <target>اینجا می‌توانید دسترسی به یک یا چند بایگانی خبر را واگذار نمایید.</target>
+        <target>Овде можете одобрити приступ једној или више категорија вести.</target>
       </trans-unit>
       <trans-unit id="tl_user.newp.0">
         <source>News archive permissions</source>
-        <target>مجوزهای بایگانی خبر</target>
+        <target>Дозволе рубрике вести</target>
       </trans-unit>
       <trans-unit id="tl_user.newp.1">
         <source>Here you can define the news archive permissions.</source>
-        <target>اینجا می‌توانید مجوزهای بایگانی اخبار را تعریف نمایید.</target>
+        <target>Овде можете дефинисати дозволе за рубрике вести.</target>
       </trans-unit>
       <trans-unit id="tl_user.news_legend">
         <source>News permissions</source>
-        <target>مجوزهای اخبار</target>
+        <target>Дозволе вести</target>
       </trans-unit>
     </body>
   </file>
