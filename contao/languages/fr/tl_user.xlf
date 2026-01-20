@@ -1,17 +1,17 @@
 <?xml version="1.0" ?><xliff version="1.1">
-  <file datatype="php" original="contao/languages/en/tl_user.php" source-language="en" target-language="nl">
+  <file datatype="php" original="contao/languages/en/tl_user.php" source-language="en" target-language="fr">
     <body>
       <trans-unit id="tl_user.news.0">
         <source>Allowed archives</source>
-        <target>Toegestane nieuwsarchieven</target>
+        <target>Archives d'actualités autorisées</target>
       </trans-unit>
       <trans-unit id="tl_user.news.1">
         <source>Here you can grant access to one or more news archives.</source>
-        <target>Selecteer de nieuwsarchieven die u toegankelijk wil maken voor de gebruiker.</target>
+        <target>Accorder l'accès à une ou plusieurs archives d'actualités.</target>
       </trans-unit>
       <trans-unit id="tl_user.news_legend">
         <source>News permissions</source>
-        <target>Permissies voor nieuws</target>
+        <target>Permissions des actualités</target>
       </trans-unit>
     </body>
   </file>
